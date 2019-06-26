@@ -24,5 +24,17 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "pwa-api",
+      "urls": ["https://www.techiediaries.com/api/data.json"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "5s"
+      }
+    }
   ]
 }

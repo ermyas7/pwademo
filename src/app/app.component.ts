@@ -39,13 +39,13 @@ export class AppComponent implements OnInit {
         this.items = data;
       });
 
-      this.apiService
-        .get("https://jsonplaceholder.typicode.com/todos/4")
-        .subscribe(todo => {
-          console.log("from get");
-          console.log(todo);
-          console.log("================");
-        });
+      // this.apiService
+      //   .get("https://jsonplaceholder.typicode.com/todos/4")
+      //   .subscribe(todo => {
+      //     console.log("from get");
+      //     console.log(todo);
+      //     console.log("================");
+      //   });
 
       this.apiService
         .get("https://jsonplaceholder.typicode.com/todos", {
